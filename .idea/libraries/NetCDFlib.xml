@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="NetCDFlib">
+    <CLASSES>
+      <root url="file://C:/Program Files/NetCDFlib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://C:/Program Files/NetCDFlib" recursive="false" />
+  </library>
+</component>
