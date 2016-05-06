@@ -1,16 +1,13 @@
 package com.company;
 
 
+import controllers.FTP4Download;
+
 public class Main {
 
     public static void main(String[] args){
-        FTPDownload ftp_download = new FTPDownload("samoa.gsfc.nasa.gov", "/subscriptions/MODISA/XM/carlos.yap/2727/", "ftp", "carlos.yap@cgi.com", 21);
-        ReadNetCDF rhdf = new ReadNetCDF("C:\\Users\\yapca\\Downloads\\" +
-                "HDF_MODISA\\A2016098124000.L2_LAC.Netherlands_new.nc");
-        try {
-            rhdf.ParseFile();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        FTP4Download ftp_download = new FTP4Download("samoa.gsfc.nasa.gov", "ftp", "carlos.yap@cgi.com", 21);
+        ftp_download.findNewFiles("/subscriptions/MODISA/XM/carlos.yap/2727/", "C:\\Users\\yapca\\Downloads\\HDF_MODISA\\Download\\");
+
     }
 }

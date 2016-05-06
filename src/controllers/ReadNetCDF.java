@@ -1,4 +1,4 @@
-package com.company;
+package controllers;
 
 import ucar.ma2.Array;
 import ucar.ma2.DataType;
@@ -12,16 +12,11 @@ import java.util.Iterator;
  * Created by yapca on 7-4-2016.
  */
 public class ReadNetCDF {
-    private static String file_path  = null;
-    //private constructor
-    private ReadNetCDF(){
 
-    }
-    public ReadNetCDF(String file_path) {
-        this.file_path = file_path;
+    public ReadNetCDF() {
     }
 
-    public float[][] ParseFile() throws Exception {
+    public float[][] parseFile(String file_path) throws Exception {
         // retrieve an instance of NetCDF
         NetcdfFile file = null;
         try

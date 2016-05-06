@@ -12,5 +12,6 @@
     <orderEntry type="library" name="commons-net:commons-net:3.4" level="project" />
     <orderEntry type="library" name="MYSQL_library" level="project" />
     <orderEntry type="library" name="org.hibernate:hibernate-core:4.2.0.Final" level="project" />
+    <orderEntry type="library" name="ftp4j-1.7.2" level="project" />
   </component>
 </module>
